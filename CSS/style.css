@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Playfair+Display:wght@400;500;900&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 34, 33);
+    position: relative;
+    flex-direction: column;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    gap: 25px;
+    height: 100vh;
+}
+
+.about {
+    gap: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+/* .profile-picture {
+    background-image: url('./Images/profile.jpg.jpg');
+    background-size: contain;
+
+} */
+
+.my-name {
+    width: 450px;
+}
+
+.my-name span {
+    font-size: 72px;
+    font-weight: 800;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    line-height: 78px;
+}
+
+.profile-div {
+    border-radius: 82% 18% 21% 79% / 32% 41% 59% 68%;
+    margin-top: 60px;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 450px;
+}
+
+.profile-div img {
+    border-radius: 82% 18% 21% 79% / 32% 41% 59% 68%;
+    height: 450px;
+    width: 450px;
+}
+
+
+
+.social-links-div {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 8px;
+
+}
+
+.icon-image {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-size: contain;
+}
+
+.mail-image {
+    height: 25px;
+}
+
+.icon-image:hover {
+    box-shadow: 0px 0px 1px 1px rgb(95, 95, 95),
+        0px 0px 2px 2px rgb(95, 95, 95),
+        0px 0px 3px 3px rgb(95, 95, 95);
+}
+
+.social-link {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hover-detail {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.523);
+    background-color: rgba(0, 0, 0, 0.166);
+    padding: 8px;
+    margin-top: 6px;
+    margin-left: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.chat-div {
+    position: relative;
+}
+
+.chat-button {
+    width: 110px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    background: linear-gradient(10deg, #ff0000, transparent);
+    background-color: #d89821;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 45px;
+    transition: all 100ms linear;
+}
+
+.chat-button:hover {
+    box-shadow: 0px 0px 1px 1px rgb(95, 95, 95),
+        0px 0px 2px 2px rgb(95, 95, 95),
+        0px 0px 3px 3px rgb(95, 95, 95),
+        0px 0px 4px 4px rgb(95, 95, 95),
+        0px 0px 5px 5px rgb(95, 95, 95);
+}
+
+.contact-div {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(27, 25, 25);
+    padding: 50px;
+}
+
+.about-me {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    width: 35%;
+}
+
+.about-me label {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.contact-me {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-me label {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+@media (min-width: 50px) and (max-width: 319px){
+    .hover-detail {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .about {
+        order: 2;
+    }
+
+    .profile-div {
+        margin-top: 60px;
+        order: 1;
+        height: 250px;
+        width: 250px;
+    }
+
+    .profile-div img {
+        border-radius: 82% 18% 21% 79% / 32% 41% 59% 68%;
+        height: 250px;
+        width: 250px;
+    }
+
+    .my-name {
+
+        width: 100%;
+        display: flex;
+        text-align: center;
+
+
+    }
+
+    .my-name span {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .my-work {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links-div {
+
+        width: 100%;
+        justify-content: center;
+    }
+
+    .chat-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chat-button {
+        margin: 0;
+        width: 161px;
+        height: 50px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .contact-div {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about-me {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-me span {
+        font-size: 15px;
+    }
+
+    .contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    .hover-detail {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .about {
+        order: 2;
+    }
+
+    .profile-div {
+        margin-top: 60px;
+        order: 1;
+        height: 325px;
+        width: 325px;
+    }
+
+    .profile-div img {
+        border-radius: 82% 18% 21% 79% / 32% 41% 59% 68%;
+        height: 325px;
+        width: 325px;
+    }
+
+    .my-name {
+
+        width: 100%;
+        display: flex;
+        text-align: center;
+
+
+    }
+
+    .my-name span {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .my-work {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links-div {
+
+        width: 100%;
+        justify-content: center;
+    }
+
+    .chat-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chat-button {
+        margin: 0;
+        width: 161px;
+        height: 50px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .contact-div {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about-me {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-me span {
+        font-size: 15px;
+    }
+
+    .contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .hover-detail {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .about {
+        order: 2;
+
+    }
+
+    .profile-div {
+        margin-top: 60px;
+        order: 1;
+        height: 400px;
+        width: 400px;
+    }
+
+    .profile-div img {
+        border-radius: 82% 18% 21% 79% / 32% 41% 59% 68%;
+        height: 400px;
+        width: 400px;
+    }
+
+    .my-name {
+
+        width: 100%;
+        display: flex;
+        text-align: center;
+
+
+    }
+
+    .my-name span {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .my-work {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links-div {
+
+        width: 100%;
+        justify-content: center;
+    }
+
+    .chat-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chat-button {
+        margin: 0;
+        width: 161px;
+        height: 50px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .contact-div {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about-me {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-me span {
+        font-size: 15px;
+    }
+
+    .contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+@media (min-width: 769px) and (max-width: 1010px){
+    .hover-detail {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .about {
+        order: 2;
+
+    }
+
+    .profile-div {
+        margin-top: 60px;
+        order: 1;
+        height: 400px;
+        width: 400px;
+    }
+
+    .profile-div img {
+        border-radius: 82% 18% 21% 79% / 32% 41% 59% 68%;
+        height: 400px;
+        width: 400px;
+    }
+
+    .my-name {
+
+        width: 100%;
+        display: flex;
+        text-align: center;
+
+
+    }
+
+    .my-name span {
+        font-size: 68px;
+        line-height: 75px;
+    }
+
+    .my-work {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links-div {
+
+        width: 100%;
+        justify-content: center;
+    }
+
+    .chat-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chat-button {
+        margin: 0;
+        width: 161px;
+        height: 50px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
